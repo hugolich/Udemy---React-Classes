@@ -28,7 +28,8 @@ export default function ExpenseForm(props) {
       date: new Date(userDate),
     };
 
-    props.onSaveExpenseData(expenseData);
+    props.onSaveExpenseData(expenseData); //manda o objeto ExpenseData
+    //o q ta em baixo resetta os valores
     setUserTitle("");
     setUserAmount("");
     setUserDate("");
